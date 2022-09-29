@@ -18,7 +18,7 @@ h3 {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-    margin: 100% 10%;
+    margin: 10% 10%;
 }
 
 /* card */
