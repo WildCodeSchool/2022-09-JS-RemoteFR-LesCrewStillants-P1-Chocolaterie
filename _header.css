@@ -7,13 +7,25 @@ header {
   padding: 0;
   background-color: var(--blockColorPrimary);
   border-bottom: 2px solid var(--blockColorSecondary);
-  padding: 1rem;
   color: var(--titleColor);
 }
 
-header span {
+header nav {
+  z-index: 1;
+  position: fixed;
+  background-color: var(--blockColorPrimary);
+  height: 100%;
+  width: 67%;
+  padding: 1rem;
+  transition: 0.6s;
+  left: -600px;
+}
+
+header #menuBurger {
   font-size: var(--hOneSize);
   user-select: none;
+  padding: 1rem;
+  z-index: 2;
 }
 
 header span:hover {
@@ -22,6 +34,7 @@ header span:hover {
 
 .logo {
   padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 
 header nav ul {
@@ -38,4 +51,29 @@ header nav ul li a {
   color: var(--titleColor);
   text-decoration: none;
   font-size: var(--hOneSize);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+  }
+
+  header #menuBurger {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  header nav {
+    position: static;
+    align-self: flex-end;
+    width: 100%;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  header nav ul li {
+    padding-right: 2rem;
+  }
 }
