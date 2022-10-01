@@ -1,68 +1,102 @@
-* {
-    margin: 0;
-}
+    * {
+        margin: 0;
+    }
 
-body {
-    background-color: var(--bgColor);
-    font-family: "Poppins";
-}
+    body {
+        background-color: var(--bgColor);
+        font-family: "Poppins";
+    }
 
-h3 {
-    text-align: center;
-    font-size: var(--hThreeSize);
-    margin-top: auto;
-}
+    /*Using 'h3' for the title cards*/
+    h3 {
+        text-align: center;
+        font-size: var(--hThreeSize);
+        margin-top: auto;
+    }
 
-/* card grid */
-.grid-card {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-    margin: 10% 10%;
-}
+    /*Using 'grid' for the cards*/
+    .gridCard {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+        margin: 10% 10%;
+    }
 
-/* card */
-.card {
-    position: relative;
-    border-radius: 100%;
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
-}
+    /*One card block*/
+    .card {
+        position: relative;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+    }
 
-.cardTitle {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    padding-top: 10px;
-    background-color: var(--blockColorPrimaryTransparency);
-    color: var(--titleColorTransparency);
-}
+    /*Style for card title*/
+    .cardTitle {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        padding-top: 10px;
+        background-color: var(--blockColorPrimaryTransparency);
+        color: var(--titleColorTransparency);
+    }
 
-/* hover card */
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
+    /*Text for hover card*/
+    .text {
+        position: absolute;
+        color: red;
+        font-size: 106px;
+        background-color: aqua;
+    }
 
-.card:hover .image {
-    opacity: 0.3;
-}
-  
-.card:hover .middle {
-    opacity: 1;
-}
-  
-.text {
-    background-color: var(--titleColorTransparency);
-    color: var(--blockColorPrimaryTransparency);
-    font-size: 16px;
-    padding: 16px 32px;
+@media screen and (min-width: 768px) {
+    .boxCard {
+        margin: 10% 10%;
+        border: 2px solid var(--blockColorSecondary);
+        border-radius: 10px;
+    }
+
+    .gridCard {        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+        gap: 12rem;
+        margin: 5% 15%;
+    }
+
+    .boxCard h2 {
+        margin: 2rem 2rem;
+        size: var(--hTwoSize);
+        color: var(--blockColorSecondary)
+    }
+
+    /*Using middle for hover*/
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+    }
+
+    /*Style for hover card*/
+    .card:hover .image {
+        opacity: 0.3;
+    }
+    
+    /*Style for hover card*/
+    .card:hover .middle {
+        opacity: 1;
+    }
+    
+    /*Text for hover card*/
+    .text {
+        background-color: var(--titleColorTransparency);
+        color: var(--blockColorPrimaryTransparency);
+        font-size: 16px;
+        padding: 16px 32px;
+    }
 }
