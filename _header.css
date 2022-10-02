@@ -53,9 +53,14 @@ header nav ul li a {
   font-size: var(--hOneSize);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header {
     display: flex;
+  }
+
+  .logo {
+    padding-top: 0;
+    align-self: center;
   }
 
   header #menuBurger {
