@@ -44,9 +44,13 @@ let menuIndicator = 2;
 menuBurger.addEventListener("click", () => {
   console.log("click");
   if (menuIndicator < 2) {
+    menuBurger.innerHTML = "&#9776";
+    menuBurger.style.paddingLeft = "1rem";
     nav.style.left = "-600px";
     menuIndicator++;
   } else {
+    menuBurger.innerHTML = "&#10005;";
+    menuBurger.style.paddingLeft = "1.1rem";
     nav.style.left = "0px";
     menuIndicator--;
   }
