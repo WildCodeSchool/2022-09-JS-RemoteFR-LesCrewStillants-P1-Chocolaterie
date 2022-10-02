@@ -14,9 +14,9 @@
   --bgColor: #eecaaa;
   --textColor: #3f221c;
   --titleColor: #a8d7a9;
-  --titleColorTransparency: #a8d7a9 80%;
+  --titleColorTransparency: rgba(168, 215, 169, 0.8)80%;
   --blockColorPrimary: #583932;
-  --blockColorPrimaryTransparency: #583932 80%;
+  --blockColorPrimaryTransparency: rgba(88, 57, 50, 0.8)80%;
   --blockColorSecondary: #3f221c;
 
   /*Font variables*/
