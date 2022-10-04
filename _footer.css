@@ -1,5 +1,4 @@
 footer {
-  margin-top: 72vh;
   background-color: var(--blockColorPrimary);
   border-top: 2px solid var(--blockColorSecondary);
   color: var(--titleColor);
@@ -33,7 +32,6 @@ footer {
 
 @media screen and (min-width: 1024px) {
   footer {
-    margin-top: 84vh;
     flex-direction: row;
     justify-content: space-around;
   }
