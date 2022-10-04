@@ -1,2 +1,4 @@
 /*Creating styles.css and trying to commit on production branch*/
 @import "./_variables.css";
+@import "./_header.css";
+@import "./_footer.css";
