@@ -86,7 +86,7 @@ h3 {
     }
     
     /*Text for hover card*/
-    .text {
+    .cardDescription {
         background-color: var(--titleColorTransparency);
         color: var(--blockColorPrimaryTransparency);
         font-size: 16px;
