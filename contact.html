@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./contact.css">
     <title>NOUS TROUVER</title>
 </head>
 
@@ -14,7 +14,19 @@
     <main>
         <section>
             <h1>Nous Trouver</h1>
-            <p> 46 Rue de Virginal,<br> 1460 Ittre,<br> Belgique <br>Téléphone: 06 58 99 75 57 </p>
+            <p>
+                <strong>Vous êtes au bon endroit si vous cherchez :</strong>
+            </p>
+            <p>
+                - un cadeau pour vos clients<br>
+                - une attention pour vos collaborateurs<br>
+                - des gourmandises pour vos bureaux<br>
+                - des chocolats à faire découvrir dans votre boutique<br>
+                - une touche sucrée pour un événement<br>
+            </p>
+
+
+
         </section>
 
         <section id="contact">
@@ -28,9 +40,44 @@
 
                 <div class="contact-form">
                     <h1>Nous contacter</h1>
+                    <p class="ww">Nous vous accueillons du Mardi au Samedi de 8h30 à 19h30 </p>
+                    <div class="infoG">
+                        <div class=" boite">
+                            <div class="=text">
+                                <p>
+                                    <span>Adresse</span>
+                                    46 Rue de Virginal, 1460 Ittre,Belgique
+                                </p>
+                            </div>
+                        </div>
+                        <div class="boite">
+                            <div class="text">
+                                <p>
+                                    <span>Email</span>
+                                    chocoService@contact.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="boite">
+                            <div class="text">
+                                <p>
+                                    <span>Téléphone</span>
+                                    +33 6 58 99 75 57
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                     <form>
-                        <input type="text" placeholder="name" name="name" class="contact-form-txt" required>
-                        <input type="text" placeholder="email" name="mail" class="contact-form-txt" required>
+                        <input type="text" aria-label="Nom" placeholder="Nom*" name="name" class="contact-form-txt"
+                            required>
+                        <input type="text" aria-label="Email" placeholder="Email*" name="mail" class="contact-form-txt"
+                            required>
+                        <input type="text" aria-label="Vous êtes ?"
+                            placeholder="Vous êtes? (hôtel, restaurant, revendeur...)" name="contact"
+                            class="contact-form-txt" required>
                         <textarea placeholder="message" class="contact-form-textarea"></textarea>
                         <input type="submit" name="submit" class="contact-form-button" />
 
