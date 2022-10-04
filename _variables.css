@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./Assets/Poppins-Regular.ttf);
+}
+
+:root {
+  /*Spacing variables*/
+  --spacing: 8px;
+  --spacingTwo: calc(var(--spacing) * 2);
+  --spacingThree: calc(var(--spacing) * 3);
+  --spacingFour: calc(var(--spacing) * 4);
+
+  /*Color variables*/
+  --bgColor: #eecaaa;
+  --textColor: #3f221c;
+  --titleColor: #a8d7a9;
+  --titleColorTransparency: rgba(168, 215, 169, 0.8);
+  --blockColorPrimary: #583932;
+  --blockColorPrimaryTransparency: rgba(88, 57, 50, 0.8);
+  --blockColorSecondary: #3f221c;
+
+  /*Font variables*/
+
+  --textSize: 1rem;
+  --hThreeSize: 1.2rem;
+  --hTwoSize: 1.4rem;
+  --hOneSize: 1.6rem;
+}
