@@ -1,54 +1,47 @@
-    * {
-        margin: 0;
-    }
+@import "./styles.css";
+* {
+    margin: 0;
+}
 
-    body {
-        background-color: var(--bgColor);
-        font-family: "Poppins";
-    }
+body {
+    background-color: var(--bgColor);
+    font-family: "Poppins";
+}
 
-    /*Using 'h3' for the title cards*/
-    h3 {
-        text-align: center;
-        font-size: var(--hThreeSize);
-        margin-top: auto;
-    }
+/*Using 'h3' for the title cards*/
+h3 {
+    text-align: center;
+    font-size: var(--hThreeSize);
+    margin-top: auto;
+}
 
-    /*Using 'grid' for the cards*/
-    .gridCard {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-        margin: 10% 10%;
-    }
+/*Using 'grid' for the cards*/
+.gridCard {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    margin: 10% 10%;
+}
 
-    /*One card block*/
-    .card {
-        position: relative;
-        border-radius: 100%;
-        overflow: hidden;
-        width: 300px;
-        height: 300px;
-    }
+/*One card block*/
+.card {
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
 
-    /*Style for card title*/
-    .cardTitle {
-        position: absolute;
-        bottom: 0;
-        height: 50px;
-        width: 100%;
-        padding-top: 10px;
-        background-color: var(--blockColorPrimaryTransparency);
-        color: var(--titleColorTransparency);
-    }
-
-    /*Text for hover card*/
-    .text {
-        position: absolute;
-        color: red;
-        font-size: 106px;
-        background-color: aqua;
-    }
+/*Style for card title*/
+.cardTitle {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: var(--blockColorPrimaryTransparency);
+    color: var(--titleColorTransparency);
+}
 
 @media screen and (min-width: 768px) {
     .boxCard {
