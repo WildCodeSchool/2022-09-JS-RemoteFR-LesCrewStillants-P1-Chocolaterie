@@ -79,6 +79,7 @@ header nav ul li a:hover {
     position: static;
     align-self: flex-end;
     width: 100%;
+    border-top: none;
   }
 
   header nav ul {
