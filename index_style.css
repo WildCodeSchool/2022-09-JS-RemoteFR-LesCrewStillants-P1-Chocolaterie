@@ -37,9 +37,11 @@ h2 {
     color: var(--titleColor);
     font-size: var(--hTwoSize);
     text-shadow: 0 0 15px var(--blockColorSecondary);
-
 }
 
+a {
+    text-decoration: none;
+}
 
 main {
     display: flex;
