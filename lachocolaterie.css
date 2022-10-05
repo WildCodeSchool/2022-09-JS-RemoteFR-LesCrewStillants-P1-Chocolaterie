@@ -65,7 +65,6 @@ body {
 .fournisseurs {
   display: flex;
   flex-direction: column;
-
 }
 
 .crewBox {
@@ -103,7 +102,7 @@ body {
     max-width: 100%;
     display: grid;
     grid-template-columns: 33% 66%;
-    grid-template-areas: "timeline crew""timeline suppliers";
+    grid-template-areas: "timeline crew" "timeline suppliers";
     gap: 3rem;
   }
 
@@ -132,6 +131,11 @@ body {
     display: block;
   }
 
+  .fournisseurs img {
+    width: 95%;
+    height: 370px;
+  }
+
   .chocolaterie,
   .equipe,
   .fournisseurs {
@@ -147,7 +151,6 @@ body {
   }
 
   .crewBox {
-
     height: 200px;
     width: 200px;
   }
@@ -156,12 +159,11 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 1rem;
-    grid-template-areas: "mainTitle mainTitle""titre1 titre2""img1 img2""p1 p2";
+    grid-template-areas: "mainTitle mainTitle" "titre1 titre2" "img1 img2" "p1 p2";
   }
 
   #plantationTitle {
     grid-area: titre1;
-
   }
 
   .boite3 {
