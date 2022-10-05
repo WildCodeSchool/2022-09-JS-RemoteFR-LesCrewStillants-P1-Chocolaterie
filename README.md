@@ -12,7 +12,7 @@
 ### GitHub repository
 
 - Code available on GitHub
-- Deployed using [GitHub pages](https://pages.github.com/)
+- Deployed using [GitHub pages](https://github.com/WildCodeSchool/2022-09-JS-RemoteFR-LesCrewStillants-P1-Chocolaterie)
 - Explicit commit messages
 
 ### Demos
