@@ -67,3 +67,15 @@ menuBurger.addEventListener("click", () => {
     menuIndicator--;
   }
 });
+
+// Event for having an open menu burger close if we scroll
+window.addEventListener("scroll", (e) => {
+  var currentScrollPos = window.pageYOffset;
+  if (window.scrollY > 50 && prevScrollpos < currentScrollPos) {
+    menuBurger.innerHTML = "&#9776";
+    menuBurger.style.paddingLeft = "1rem";
+    nav.style.left = "-600px";
+    menuIndicator = 2;
+  }
+  prevScrollpos = currentScrollPos;
+});

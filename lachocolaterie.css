@@ -1,74 +1,102 @@
 @import "./styles.css";
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 .boite1 {
-    text-align: center;
-    color: var(--titleColor);
-    background: var(--blockColorPrimaryTransparency);
-    /*border-radius: 15px;
+  text-align: center;
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  /*border-radius: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; */
-    padding: 15px;
-    
-    
-    
+  padding: 15px;
 }
 
 .boite2 {
-    text-align: center;
-    color: var(--titleColor);
-    background: var(--blockColorPrimaryTransparency);    
-    /*border-radius: 15px;
+  text-align: center;
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  /*border-radius: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;*/
-    padding: 15px;
-    
-    
+  padding: 15px;
 }
 
 .boite3 {
-    text-align: center;
-    color: var(--titleColor);
-    background: var(--blockColorPrimaryTransparency);
-/*    border-radius: 15px;  
+  text-align: center;
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  /*    border-radius: 15px;  
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;*/
-    padding: 15px;
-    
-
+  padding: 15px;
 }
 
 h2 {
-
-    text-align: center;
-    color: var(--titleColor);
-
+  text-align: center;
+  color: var(--titleColor);
 }
 
 body {
-    background-color: var(--bgColor);
-    font-family: "Poppins";
+  background-color: var(--bgColor);
+  font-family: "Poppins";
 }
 
 .chocolaterie {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bgColor);
-    
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgColor);
 }
 
 .equipe {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .fournisseurs {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 3rem;
+  }
+  .container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-areas: "timeline crew" "timeline suppliers";
+    gap: 3rem;
+  }
+  .chocolaterie {
+    grid-area: timeline;
+  }
+  .equipe {
+    grid-area: crew;
+    flex-direction: row;
+    display: grid;
+  }
 
+  .fournisseurs {
+    grid-area: suppliers;
+    display: block;
+  }
+
+  .chocolaterie,
+  .equipe,
+  .fournisseurs {
+    border: 1px solid var(--blockColorSecondary);
+    box-shadow: -2px 5px 10px var(--blockColorSecondary);
+    border-radius: 15px;
+  }
+
+  .boite1,
+  .boite2,
+  .boite3 {
+    border-radius: 14px 14px 0 0;
+    border-bottom: 1px solid var(--blockColorSecondary);
+  }
+}
