@@ -24,9 +24,9 @@ for (let i = 0; i < cardArray.length; i++) {
   const card = document.querySelectorAll(".card");
 
   //Card picture
-  card.appendChild(document.createElement("div")).classList.add("cardPicture");
-  const cardPicture = document.querySelector(".cardPicture");
-  cardPicture.appendChild(document.createElement("img")).src = cardArray[i].image;
+  card[i].appendChild(document.createElement("img")).classList.add("cardPicture");
+  const cardPicture = document.querySelectorAll(".cardPicture");
+  cardPicture[i].src = cardArray[i].image;
 
   //Title for card
   card.appendChild(document.createElement("div")).classList.add("cardTitle");
