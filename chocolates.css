@@ -9,7 +9,8 @@ body {
 }
 
 /*Using 'h3' for the title cards*/
-h3, h1 {
+h3,
+h1 {
   text-align: center;
   margin-top: auto;
 }
@@ -85,27 +86,26 @@ h1 {
   }
 
   .gridCard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-    gap: 12rem;
+    display: flex;
+    gap: 5rem;
     margin: 5% 15%;
   }
 
-  .boxCard h2 {
+  .boxCard h1 {
     text-align: center;
     color: var(--titleColor);
     background: var(--blockColorPrimaryTransparency);
-    border-radius: 15px;
+    border-radius: 14px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding: 15px;
+    padding: 15px 15px 0 0;
   }
 
   .cardDescription {
     background-color: var(--titleColorTransparency);
     color: var(--blockColorPrimaryTransparency);
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 16px;
   }
 
   /*Using middle for hover*/

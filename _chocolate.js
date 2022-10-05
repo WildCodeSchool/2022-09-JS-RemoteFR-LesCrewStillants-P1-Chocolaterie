@@ -1,17 +1,20 @@
 const cardArray = [
   {
     name: "Pachoco'",
-    description: "Ingredients: Chocolate, Sugar, Milk, Cocoa Butter, Soy Lecithin",
+    description:
+      "Ingredients: Chocolate, Sugar, Milk, Cocoa Butter, Soy Lecithin",
     image: "./Assets/pachoco.png",
   },
   {
     name: "Chock'Hot",
-    description: "Ingredients: Chocolate, Sugar, Milk, Cocoa Butter, Soy Lecithin",
+    description:
+      "Ingredients: Chocolate, Sugar, Milk, Cocoa Butter, Soy Lecithin",
     image: "./Assets/chockhot.png",
   },
   {
     name: "Crocmou",
-    description: "Ingredients: Chocolate, Sugar, Milk, Cocoa Butter, Soy Lecithin",
+    description:
+      "Ingredients: Chocolate, Sugar, Milk, Cocoa Butter, Soy Lecithin",
     image: "./Assets/crocmou.png",
   },
 ];
