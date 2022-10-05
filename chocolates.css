@@ -77,11 +77,13 @@ h3 {
   }
 
   .boxCard h2 {
-    size: var(--hTwoSize);
-    color: var(--blockColorSecondary);
+    text-align: center;
+    color: var(--titleColor);
     background: var(--blockColorPrimaryTransparency);
-    border-bottom: 1px solid var(--blockColorSecondary);
-    border-radius: 14px 14px 0 0;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 15px;
   }
 
   .cardDescription {
