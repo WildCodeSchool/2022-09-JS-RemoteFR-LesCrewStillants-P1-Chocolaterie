@@ -61,6 +61,6 @@ for (let i = 0; i < cardArray.length; i++) {
     .classList.add("postCardDescription", "postCardDescription" + (i + 1));
   const postCardDescription = document.querySelector(
     ".postCardDescription" + (i + 1)
-  );
-  postCardDescription.innerHTML = cardArray[i].description;
+    );
+    postCardDescription.innerHTML = cardArray[i].description;
 }
