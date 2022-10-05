@@ -9,16 +9,27 @@ body {
 }
 
 /*Using 'h3' for the title cards*/
-h3 {
+h3,
+h1 {
   text-align: center;
-  font-size: var(--hThreeSize);
   margin-top: auto;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid var(--blockColorSecondary);
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  padding: 15px;
 }
 
 /*Using 'grid' for the cards*/
 .gridCard {
   display: grid;
-  gap: 5rem;
+  flex-direction: row;
+  padding: 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
   margin: 10% 10%;
 }
@@ -30,6 +41,7 @@ h3 {
   height: 300px;
   border-radius: 100%;
   overflow: hidden;
+  margin-bottom: 1rem;
   background-color: #aaa;
 }
 
@@ -51,9 +63,13 @@ h3 {
 }
 
 .postCardDescription {
-  position: absolute;
-  color: red;
-  border: 2px solid red;
+  background-color: var(--titleColorTransparency);
+  color: var(--blockColorPrimaryTransparency);
+  font-size: 16px;
+  padding: 16px 32px;
+  border: 1px solid var(--blockColorPrimaryTransparency);
+  border-radius: 15px;
+  margin-bottom: 5rem;
 }
 
 .middle {
@@ -70,27 +86,26 @@ h3 {
   }
 
   .gridCard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-    gap: 12rem;
+    display: flex;
+    gap: 5rem;
     margin: 5% 15%;
   }
 
-  .boxCard h2 {
+  .boxCard h1 {
     text-align: center;
     color: var(--titleColor);
     background: var(--blockColorPrimaryTransparency);
-    border-radius: 15px;
+    border-radius: 14px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding: 15px;
+    padding: 15px 15px 0 0;
   }
 
   .cardDescription {
     background-color: var(--titleColorTransparency);
     color: var(--blockColorPrimaryTransparency);
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 16px;
   }
 
   /*Using middle for hover*/
@@ -115,5 +130,10 @@ h3 {
   /*Style for hover card*/
   .card:hover .middle {
     opacity: 1;
+  }
+
+  .postCardDescription {
+    visibility: hidden;
+    display: none;
   }
 }
