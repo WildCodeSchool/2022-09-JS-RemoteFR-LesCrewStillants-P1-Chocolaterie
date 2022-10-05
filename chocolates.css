@@ -64,8 +64,9 @@ h3 {
 @media screen and (min-width: 768px) {
   .boxCard {
     margin: 10% 10%;
-    border: 2px solid var(--blockColorSecondary);
-    border-radius: 10px;
+    border: 1px solid var(--blockColorSecondary);
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px var(--blockColorSecondary);
   }
 
   .gridCard {
@@ -76,9 +77,11 @@ h3 {
   }
 
   .boxCard h2 {
-    margin: 2rem 2rem;
     size: var(--hTwoSize);
     color: var(--blockColorSecondary);
+    background: var(--blockColorPrimaryTransparency);
+    border-bottom: 1px solid var(--blockColorSecondary);
+    border-radius: 14px 14px 0 0;
   }
 
   .cardDescription {
