@@ -57,6 +57,7 @@ h3 {
 }
 
 .middle {
+  opacity: 0;
   display: none;
 }
 
@@ -81,15 +82,14 @@ h3 {
   }
 
   .cardDescription {
-    visibility: hidden;
-    position: fixed;
+    visibility: visible;
   }
 
   /*Using middle for hover*/
   .middle {
     display: block;
     transition: 0.5s ease;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
