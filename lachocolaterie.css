@@ -88,12 +88,13 @@ body {
 .crewTitle {
   position: absolute;
   bottom: 0;
-  height: 50px;
+  height: 75px;
   width: 100%;
   padding-top: 10px;
   background-color: var(--blockColorPrimaryTransparency);
   text-align: center;
   color: var(--titleColorTransparency);
+  font-size: 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -151,8 +152,8 @@ body {
   }
 
   .crewBox {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
   }
 
   .fournisseurs {
