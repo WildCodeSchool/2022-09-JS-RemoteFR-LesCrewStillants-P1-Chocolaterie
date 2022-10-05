@@ -5,50 +5,24 @@
   margin: 0;
 }
 
-.boite1 {
-  text-align: center;
-  color: var(--titleColor);
-  background: var(--blockColorPrimaryTransparency);
-  /*border-radius: 15px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px; */
-  padding: 15px;
-}
-
-.boite2 {
-  text-align: center;
-  color: var(--titleColor);
-  background: var(--blockColorPrimaryTransparency);
-  /*border-radius: 15px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;*/
-  padding: 15px;
-}
-
-.boite3 {
-  text-align: center;
-  color: var(--titleColor);
-  background: var(--blockColorPrimaryTransparency);
-  /*    border-radius: 15px;  
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;*/
-  padding: 15px;
+body {
+  background-color: var(--bgColor);
+  font-family: "Poppins";
 }
 
 .boite1,
 .boite2,
 .boite3 {
+  text-align: center;
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  padding: 15px;
   border-bottom: 1px solid var(--blockColorSecondary);
 }
 
-h2 {
+main h2 {
   text-align: center;
   color: var(--titleColor);
-}
-
-body {
-  background-color: var(--bgColor);
-  font-family: "Poppins";
 }
 
 .chocolaterie {
