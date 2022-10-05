@@ -29,7 +29,7 @@ section p {
     padding-left: 20%;
     line-height: 1.25;
     margin-bottom: 2rem;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 strong {
@@ -48,16 +48,17 @@ section h1 {
 
 }
 
-/*@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
     section h1 {
         font-size: 40px;
         text-align: start;
         padding-left: 20%;
+        margin-bottom: 10px;
+        margin-top: 20px;
 
     }
-} */
-
+}
 
 .contact-in {
     width: 80%;
@@ -109,7 +110,7 @@ section h1 {
     padding-left: 0.5rem;
 }
 
-.contact-form h1 {
+.contact-form h2 {
     margin-bottom: 10px;
     color: var(--titleColor);
     width: 100%;
@@ -117,7 +118,7 @@ section h1 {
 
 
 @media screen and (min-width: 600px) {
-    .contact-form h1 {
+    .contact-form h2 {
         display: flex;
         flex-direction: row-reverse;
 
