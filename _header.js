@@ -1,6 +1,6 @@
 // Selecting Header and injecting a Menu Burger Icon
 const header = document.querySelector("header");
-header.innerHTML = `<span id="menuBurger">&#9776</span>`;
+header.innerHTML = `<p id="menuBurger">&#9776</p>`;
 
 // Injecting an empty link into Header and adding a class to it
 header.appendChild(document.createElement("a"));
