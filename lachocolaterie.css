@@ -120,7 +120,6 @@ body {
   #crewGrid {
     padding: 1rem 0;
     flex-direction: row;
-    display: flex;
     gap: 1rem;
     justify-content: center;
     text-align: center;
