@@ -39,7 +39,9 @@ header span:hover {
 }
 
 .logo img {
+  padding-top: 0.5rem;
   padding-left: 1rem;
+  width: 80%;
 }
 
 header nav ul {
@@ -72,6 +74,10 @@ header nav ul li a:hover {
     align-self: center;
   }
 
+  .logo img {
+    width: 55%;
+  }
+
   header #menuBurger {
     visibility: hidden;
     position: fixed;
@@ -79,7 +85,7 @@ header nav ul li a:hover {
 
   header nav {
     position: static;
-    align-self: flex-end;
+    align-self: center;
     width: 100%;
     border-top: none;
   }
