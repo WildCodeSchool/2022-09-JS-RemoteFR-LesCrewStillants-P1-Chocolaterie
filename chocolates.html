@@ -19,6 +19,14 @@
 		</div>
 	</main>
 	<footer></footer>
+	<script src="./konami.js"></script>
+	<script>
+		var easter_egg = new Konami(function() { 
+			const audio = new Audio('Assets/audio_file.mp3');
+			audio.play();
+			audio.volume = 0.2;
+		});
+		</script>
 	<script src="./_chocolate.js"></script>
 	<script src="./_header.js"></script>
 	<script src="./_footer.js"></script>
