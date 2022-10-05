@@ -13,11 +13,11 @@ header {
 }
 
 header nav {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   background-color: var(--blockColorPrimary);
   height: 100%;
-  width: 60%;
+  min-width: 40%;
   padding: 1rem;
   transition: 0.6s;
   top: 72px;
@@ -31,7 +31,7 @@ header #menuBurger {
   text-align: center;
   user-select: none;
   padding: 1rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 header span:hover {
