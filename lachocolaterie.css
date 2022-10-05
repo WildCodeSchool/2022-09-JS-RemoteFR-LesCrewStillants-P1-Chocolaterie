@@ -102,7 +102,7 @@ body {
     max-width: 100%;
     display: grid;
     grid-template-columns: 33% 66%;
-    grid-template-areas: "timeline crew" "timeline suppliers";
+    grid-template-areas: "timeline crew" "timeline suppliers" "timeline empty";
     gap: 3rem;
   }
 
@@ -112,19 +112,17 @@ body {
 
   .equipe {
     grid-area: crew;
+  }
+
+  #crewGrid {
+    padding: 1rem 0;
     flex-direction: row;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    grid-template-rows: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
   }
-
-  .equipe h1 {
-    grid-column: 1 / -1;
-  }
-
-  /* .crewBox {
-  } */
 
   .fournisseurs {
     grid-area: suppliers;
