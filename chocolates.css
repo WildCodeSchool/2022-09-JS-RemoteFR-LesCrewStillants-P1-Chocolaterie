@@ -9,10 +9,17 @@ body {
 }
 
 /*Using 'h3' for the title cards*/
-h3 {
+h3, h1 {
   text-align: center;
-  font-size: var(--hThreeSize);
   margin-top: auto;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid var(--blockColorSecondary);
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  padding: 15px;
 }
 
 /*Using 'grid' for the cards*/
@@ -20,7 +27,6 @@ h3 {
   display: grid;
   flex-direction: row;
   padding: 1rem 0;
-  gap: 5rem;
   justify-content: center;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
@@ -34,6 +40,7 @@ h3 {
   height: 300px;
   border-radius: 100%;
   overflow: hidden;
+  margin-bottom: 1rem;
   background-color: #aaa;
 }
 
@@ -55,10 +62,13 @@ h3 {
 }
 
 .postCardDescription {
-  position: absolute;
-  color: red;
-  border: 2px solid red;
-  visibility: visible;
+  background-color: var(--titleColorTransparency);
+  color: var(--blockColorPrimaryTransparency);
+  font-size: 16px;
+  padding: 16px 32px;
+  border: 1px solid var(--blockColorPrimaryTransparency);
+  border-radius: 15px;
+  margin-bottom: 5rem;
 }
 
 .middle {
@@ -120,5 +130,10 @@ h3 {
   /*Style for hover card*/
   .card:hover .middle {
     opacity: 1;
+  }
+
+  .postCardDescription {
+    visibility: hidden;
+    display: none;
   }
 }
