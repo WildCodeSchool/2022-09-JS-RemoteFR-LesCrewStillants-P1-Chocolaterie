@@ -132,7 +132,6 @@ main h2 {
     border: 1px solid var(--blockColorSecondary);
     box-shadow: -2px 5px 10px var(--blockColorSecondary);
     margin-left: var(--spacing);
-
   }
 
   .chocolaterie,
