@@ -53,11 +53,11 @@ for (let i = 0; i < cardArray.length; i++) {
   cardDescription.innerHTML = cardArray[i].description;
 
   //Post card description
-  card
+  gridCard
     .appendChild(document.createElement("div"))
     .classList.add("postCardDescription", "postCardDescription" + (i + 1));
   const postCardDescription = document.querySelector(
     ".postCardDescription" + (i + 1)
-  );
-  postCardDescription.innerHTML = cardArray[i].description;
+    );
+    postCardDescription.innerHTML = cardArray[i].description;
 }
