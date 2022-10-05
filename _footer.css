@@ -23,6 +23,7 @@ footer {
 }
 .socialNetworks img {
   width: 13%;
+  transition: transform 0.5s ease;
 }
 
 .socialNetworks img:hover {
