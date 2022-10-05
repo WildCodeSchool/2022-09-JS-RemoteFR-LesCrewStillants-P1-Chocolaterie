@@ -18,7 +18,11 @@ h3 {
 /*Using 'grid' for the cards*/
 .gridCard {
   display: grid;
+  flex-direction: row;
+  padding: 1rem 0;
   gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
   margin: 10% 10%;
 }
@@ -54,6 +58,7 @@ h3 {
   position: absolute;
   color: red;
   border: 2px solid red;
+  visibility: visible;
 }
 
 .middle {
