@@ -8,6 +8,18 @@ body {
   background-color: var(--bgColor);
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
 #homeSubHeader {
   display: flex;
   flex-direction: column;
