@@ -1,5 +1,8 @@
 // Selecting Header and injecting a Menu Burger Icon
+// Also selecting main and subHeader for later
 const header = document.querySelector("header");
+const main = document.querySelector("main");
+const subHeader = document.querySelector("#homeSubHeader");
 header.innerHTML = `<p id="menuBurger">&#9776</p>`;
 
 // Injecting an empty link into Header and adding a class to it
@@ -60,15 +63,21 @@ menuBurger.addEventListener("click", () => {
     menuBurger.style.paddingLeft = "1rem";
     nav.style.left = "-600px";
     menuIndicator++;
+    main.style.filter = "none";
+    subHeader.style.filter = "none";
+    footer.style.filter = "none";
   } else {
     menuBurger.innerHTML = "&#10005;";
     menuBurger.style.paddingLeft = "1.1rem";
     nav.style.left = "0px";
     menuIndicator--;
+    main.style.filter = "opacity(25%)";
+    subHeader.style.filter = "opacity(25%)";
+    footer.style.filter = "opacity(25%)";
   }
 });
 
-// Event for having an open menu burger close if we scroll
+// Event for having an open menu burger close if we scroll down
 window.addEventListener("scroll", (e) => {
   var currentScrollPos = window.pageYOffset;
   if (window.scrollY > 50 && prevScrollpos < currentScrollPos) {
@@ -76,6 +85,22 @@ window.addEventListener("scroll", (e) => {
     menuBurger.style.paddingLeft = "1rem";
     nav.style.left = "-600px";
     menuIndicator = 2;
+    main.style.filter = "none";
+    subHeader.style.filter = "none";
+    footer.style.filter = "none";
   }
   prevScrollpos = currentScrollPos;
+});
+
+// Event for resize of page
+window.addEventListener("resize", () => {
+  // if (window.matchMedia("(min-width: 1024px)").matches) {
+  menuBurger.innerHTML = "&#9776";
+  menuBurger.style.paddingLeft = "1rem";
+  nav.style.left = "-600px";
+  menuIndicator = 2;
+  main.style.filter = "none";
+  subHeader.style.filter = "none";
+  footer.style.filter = "none";
+  // }
 });
