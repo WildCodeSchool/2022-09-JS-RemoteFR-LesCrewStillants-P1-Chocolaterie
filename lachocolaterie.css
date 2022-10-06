@@ -10,7 +10,7 @@ body {
   font-family: "Poppins";
 }
 
-h3 {
+main h3 {
   font-size: var(--hTwoSize);
   color: var(--textColor);
   margin-top: var(--spacingTwo);

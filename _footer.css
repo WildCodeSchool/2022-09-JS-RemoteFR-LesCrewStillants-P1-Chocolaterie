@@ -31,6 +31,10 @@ footer {
   transform: scale(1.2);
 }
 
+footer h3 {
+  font-size: --hThreeSize;
+}
+
 @media screen and (min-width: 1024px) {
   footer {
     flex-direction: row;
