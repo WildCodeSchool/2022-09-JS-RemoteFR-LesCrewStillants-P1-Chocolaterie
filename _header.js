@@ -35,12 +35,18 @@ const navItems = [
   { name: "Nous Trouver", link: "./contact.html", class: "menu3" },
 ];
 
+const subNavChocolaterie = [
+  { name: "La Chocolaterie", link: "#laChocolaterie", id: "laChocolaterie" },
+  { name: "Nos Equipiers", link: "#equipiers", id: "equipiers" },
+  { name: "Nos Fournisseurs", link: "#fournisseurs", id: "fournisseurs" },
+];
+
 // We make a loop to insert link based on array length
 for (let i = 0; i < navItems.length; i++) {
   //add a li in ul for each loop with a class name based on the loop
   ul.appendChild(document.createElement("li")).classList.add("li" + (i + 1));
   //select the li based on the loop
-  const currentLi = document.querySelector(".li" + (i + 1));
+  let currentLi = document.querySelector(".li" + (i + 1));
   //add a "a" in current Li of the loop
   currentLi
     .appendChild(document.createElement("a"))
@@ -50,6 +56,23 @@ for (let i = 0; i < navItems.length; i++) {
   // inject current a with an href and innerText from the array navItems
   currentA.href = `${navItems[i].link}`;
   currentA.innerText = `${navItems[i].name}`;
+
+  // if (window.location.pathname === "./lachocolaterie.html" && i === 0) {
+  //   // ul.appendChild(document.createElement("div")).classList.add(
+  //   //   "chocolaterieSubMenu"
+  //   // );
+  //   // const chocolaterieSubMenu = document.querySelector(".chocolaterieSubMenu");
+  //   for (let j = 0; j < subNavChocolaterie.length; j++) {
+  //     currentLi
+  //       .appendChild(document.createElement("a"))
+  //       .setAttribute("id", `${subNavChocolaterie[j].id}`);
+  //     const currentSubLi = document.querySelector(
+  //       `#${subNavChocolaterie[j].id}`
+  //     );
+  //     currentSubLi.href = `${subNavChocolaterie[j].link}`;
+  //     currentSubLi.innerText = `${subNavChocolaterie[j].name}`;
+  //   }
+  // }
 }
 
 //Making a function with parameters for hiding menu, to call it more easily

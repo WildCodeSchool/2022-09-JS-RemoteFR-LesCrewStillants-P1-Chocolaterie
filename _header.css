@@ -39,6 +39,7 @@ header nav {
 
 header #menuBurger {
   font-size: var(--hOneSize);
+  color: var(--titleColor);
   text-align: center;
   user-select: none;
   padding: 1rem;
