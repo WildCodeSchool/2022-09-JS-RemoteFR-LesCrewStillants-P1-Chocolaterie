@@ -2,6 +2,12 @@
   margin: 0;
 }
 
+main,
+footer,
+#homeSubHeader {
+  transition: filter 0.5s ease-in-out;
+}
+
 header {
   font-family: "Poppins";
   padding: 0;
