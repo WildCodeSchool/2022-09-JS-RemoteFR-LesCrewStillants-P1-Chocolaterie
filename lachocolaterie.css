@@ -87,6 +87,18 @@ main h2 {
   font-size: 15px;
 }
 
+#plantionText {
+  margin: 1rem;
+}
+
+#farmText {
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+.fournisseurs h3 {
+  padding-left: 0.5rem;
+}
+
 @media screen and (min-width: 1024px) {
   main {
     padding: 3rem;
@@ -101,7 +113,7 @@ main h2 {
     max-width: 100%;
     display: grid;
     grid-template-columns: 33% 66%;
-    grid-template-areas: "timeline crew""timeline suppliers""timeline empty";
+    grid-template-areas: "timeline crew" "timeline suppliers" "timeline empty";
     gap: 3rem;
   }
 
@@ -133,7 +145,7 @@ main h2 {
     border-radius: 15px;
     border: 1px solid var(--blockColorSecondary);
     box-shadow: -2px 5px 10px var(--blockColorSecondary);
-    margin-left: var(--spacing);
+    margin: auto;
   }
 
   .chocolaterie,
@@ -148,7 +160,6 @@ main h2 {
   .boite2,
   .boite3 {
     border-radius: 14px 14px 0 0;
-    ;
   }
 
   .crewBox {
@@ -161,7 +172,7 @@ main h2 {
     grid-template-columns: 50% 50%;
     gap: 1rem;
     padding-right: 1rem;
-    grid-template-areas: "mainTitle mainTitle""titre1 titre2""img1 img2""p1 p2";
+    grid-template-areas: "mainTitle mainTitle" "titre1 titre2" "img1 img2" "p1 p2";
   }
 
   #plantationTitle {
