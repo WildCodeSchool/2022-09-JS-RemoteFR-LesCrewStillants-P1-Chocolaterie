@@ -122,4 +122,10 @@ header nav ul li a:hover {
   header nav ul li:first-of-type {
     margin-top: 0rem;
   }
+
+  .li-sub1,
+  .li-sub2,
+  .li-sub3 {
+    display: none;
+  }
 }
