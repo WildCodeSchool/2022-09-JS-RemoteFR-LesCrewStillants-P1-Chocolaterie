@@ -36,14 +36,13 @@ section p {
   padding-right: 5%;
 }
 
-ul {
+main ul {
   flex-direction: row;
   width: 100%;
   align-items: flex-start;
   padding-left: 20%;
   line-height: 1.25;
   margin-bottom: 2rem;
-
 }
 
 strong {
@@ -90,7 +89,6 @@ h1 {
   margin-bottom: 70px;
   border: 1px solid var(--blockColorPrimaryTransparency);
   border-radius: 15px;
-
 }
 
 @media screen and (min-width: 600px) {
@@ -232,21 +230,16 @@ h1 {
 }
 
 @media screen and (min-width: 600px) {
-
   .contact-form-button::after,
   .contact-form-button::before {
     content: "";
     position: absolute;
-
   }
 
   .contact-form-button:hover {
     transform: translate(0px, -10px);
   }
-
 }
-
-
 
 @media screen and (min-width: 600px) {
   .contact-form-button {
