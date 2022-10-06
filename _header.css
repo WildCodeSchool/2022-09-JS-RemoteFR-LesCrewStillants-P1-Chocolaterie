@@ -2,6 +2,12 @@
   margin: 0;
 }
 
+main,
+footer,
+#homeSubHeader {
+  transition: filter 0.5s ease-in-out;
+}
+
 header {
   font-family: "Poppins";
   padding: 0;
@@ -10,6 +16,11 @@ header {
   color: var(--titleColor);
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: -1px;
+  transition: 0.5s ease-in-out;
 }
 
 header nav {
@@ -20,7 +31,7 @@ header nav {
   min-width: 40%;
   padding: 1rem;
   transition: 0.6s;
-  top: 72px;
+  top: 86px;
   left: -600px;
   border-top: 2px solid var(--blockColorSecondary);
   border-right: 2px solid var(--blockColorSecondary);
@@ -41,7 +52,8 @@ header span:hover {
 .logo img {
   padding-top: 0.5rem;
   padding-left: 1rem;
-  width: 80%;
+  width: 284px;
+  transition: 0.8s ease;
 }
 
 header nav ul {
@@ -52,6 +64,11 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
+  margin-bottom: 2rem;
+}
+
+header nav ul li:first-of-type {
+  margin-top: 1rem;
 }
 
 header nav ul li a {
@@ -67,6 +84,7 @@ header nav ul li a:hover {
 @media screen and (min-width: 1024px) {
   header {
     display: flex;
+    position: static;
   }
 
   .logo {
@@ -76,6 +94,7 @@ header nav ul li a:hover {
 
   .logo img {
     width: 55%;
+    transition: 0.8s ease;
   }
 
   header #menuBurger {
@@ -96,5 +115,10 @@ header nav ul li a:hover {
   }
   header nav ul li {
     padding-right: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  header nav ul li:first-of-type {
+    margin-top: 0rem;
   }
 }

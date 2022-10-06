@@ -1,5 +1,8 @@
 // Selecting Header and injecting a Menu Burger Icon
+// Also selecting main and subHeader for later
 const header = document.querySelector("header");
+const main = document.querySelector("main");
+const subHeader = document.querySelector("#homeSubHeader");
 header.innerHTML = `<p id="menuBurger">&#9776</p>`;
 
 // Injecting an empty link into Header and adding a class to it
@@ -49,6 +52,17 @@ for (let i = 0; i < navItems.length; i++) {
   currentA.innerText = `${navItems[i].name}`;
 }
 
+//Making a function with parameters for hiding menu, to call it more easily
+const hideMenu = () => {
+  menuBurger.innerHTML = "&#9776";
+  menuBurger.style.paddingLeft = "1rem";
+  nav.style.left = "-600px";
+  menuIndicator = 2;
+  main.style.filter = "none";
+  subHeader.style.filter = "none";
+  footer.style.filter = "none";
+};
+
 //Select menuBurger icon and add make a let variable to know if the menu is shown or hidden
 const menuBurger = document.querySelector("#menuBurger");
 let menuIndicator = 2;
@@ -56,26 +70,67 @@ let menuIndicator = 2;
 menuBurger.addEventListener("click", () => {
   console.log("click");
   if (menuIndicator < 2) {
-    menuBurger.innerHTML = "&#9776";
-    menuBurger.style.paddingLeft = "1rem";
-    nav.style.left = "-600px";
-    menuIndicator++;
+    hideMenu();
   } else {
     menuBurger.innerHTML = "&#10005;";
     menuBurger.style.paddingLeft = "1.1rem";
     nav.style.left = "0px";
     menuIndicator--;
+    main.style.filter = "opacity(25%)";
+    subHeader.style.filter = "opacity(25%)";
+    footer.style.filter = "opacity(25%)";
   }
 });
 
-// Event for having an open menu burger close if we scroll
+// Event for having an open menu burger close if we scroll down
 window.addEventListener("scroll", (e) => {
   var currentScrollPos = window.pageYOffset;
   if (window.scrollY > 50 && prevScrollpos < currentScrollPos) {
-    menuBurger.innerHTML = "&#9776";
-    menuBurger.style.paddingLeft = "1rem";
-    nav.style.left = "-600px";
-    menuIndicator = 2;
+    hideMenu();
+    header.style.top = "-100px";
+  } else {
+    header.style.top = "-1px";
   }
   prevScrollpos = currentScrollPos;
 });
+
+// Event for closing menu if resize of page
+window.addEventListener("resize", () => {
+  // if (window.matchMedia("(min-width: 1024px)").matches) {
+  hideMenu();
+  // }
+});
+
+// Event for closing menu if we click outside of the
+document.addEventListener("mousedown", (e) => {
+  let navOffset = 0;
+  let mouseX = 0;
+  let mouseY = 0;
+
+  navOffset = nav.offsetWidth;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  if (mouseX > navOffset && mouseY > header.offsetHeight) {
+    hideMenu();
+  }
+});
+
+/*Potential preventDefault for links, but complicated to put into place
+
+
+    const a = document.querySelectorAll("a"); //maybe change document to main or smt
+    if (menuIndicator === 2) {
+      main.addEventListener("click", (a) => {
+        a.preventDefault();
+      });
+    }
+
+A test dans la function fermante:
+
+function(evt) {return true;}
+
+window.location = this.href;
+
+ $("#submit").unbind('click').click(); 
+*/
