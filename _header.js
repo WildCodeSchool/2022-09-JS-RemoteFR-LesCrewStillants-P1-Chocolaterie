@@ -59,8 +59,11 @@ const hideMenu = () => {
   nav.style.left = "-600px";
   menuIndicator = 2;
   main.style.filter = "none";
-  subHeader.style.filter = "none";
   footer.style.filter = "none";
+
+  if (window.location.pathname === "./index.html") {
+    subHeader.style.filter = "none";
+  }
 };
 
 //Select menuBurger icon and add make a let variable to know if the menu is shown or hidden
@@ -83,8 +86,10 @@ menuBurger.addEventListener("click", () => {
 });
 
 // Event for having an open menu burger close if we scroll down
-window.addEventListener("scroll", (e) => {
-  var currentScrollPos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  let currentScrollPos = window.pageYOffset;
   if (window.scrollY > 50 && prevScrollpos < currentScrollPos) {
     hideMenu();
     header.style.top = "-100px";
@@ -92,6 +97,7 @@ window.addEventListener("scroll", (e) => {
     header.style.top = "-1px";
   }
   prevScrollpos = currentScrollPos;
+  console.log(window.scrollY);
 });
 
 // Event for closing menu if resize of page
