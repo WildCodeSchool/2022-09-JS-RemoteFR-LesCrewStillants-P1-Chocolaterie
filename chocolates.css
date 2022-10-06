@@ -9,7 +9,7 @@ body {
 }
 
 /*Using 'h3' for the title cards*/
-h3,
+main h3,
 h1 {
   text-align: center;
   margin-top: auto;
@@ -43,6 +43,7 @@ h1 {
   overflow: hidden;
   margin-bottom: 1rem;
   background-color: #aaa;
+  box-shadow: -2px 5px 10px var(--blockColorSecondary);
 }
 
 .cardPicture img {
