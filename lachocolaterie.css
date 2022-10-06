@@ -145,7 +145,7 @@ main h2 {
     border-radius: 15px;
     border: 1px solid var(--blockColorSecondary);
     box-shadow: -2px 5px 10px var(--blockColorSecondary);
-    margin-left: var(--spacing);
+    margin: auto;
   }
 
   .chocolaterie,
@@ -201,9 +201,5 @@ main h2 {
 
   #farmText {
     grid-area: p2;
-  }
-
-  .fournisseurs img {
-    margin: auto;
   }
 }
