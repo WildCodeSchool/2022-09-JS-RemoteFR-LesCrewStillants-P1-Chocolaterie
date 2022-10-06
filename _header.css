@@ -64,6 +64,11 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
+  margin-bottom: 2rem;
+}
+
+header nav ul li:first-of-type {
+  margin-top: 1rem;
 }
 
 header nav ul li a {
@@ -110,5 +115,10 @@ header nav ul li a:hover {
   }
   header nav ul li {
     padding-right: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  header nav ul li:first-of-type {
+    margin-top: 0rem;
   }
 }
