@@ -87,6 +87,9 @@ window.addEventListener("scroll", (e) => {
   var currentScrollPos = window.pageYOffset;
   if (window.scrollY > 50 && prevScrollpos < currentScrollPos) {
     hideMenu();
+    header.style.top = "-100px";
+  } else {
+    header.style.top = "-1px";
   }
   prevScrollpos = currentScrollPos;
 });

@@ -16,6 +16,11 @@ header {
   color: var(--titleColor);
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: -1px;
+  transition: 0.5s ease-in-out;
 }
 
 header nav {
@@ -74,6 +79,7 @@ header nav ul li a:hover {
 @media screen and (min-width: 1024px) {
   header {
     display: flex;
+    position: static;
   }
 
   .logo {
