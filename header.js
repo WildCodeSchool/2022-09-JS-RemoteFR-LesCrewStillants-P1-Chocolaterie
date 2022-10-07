@@ -57,7 +57,11 @@ for (let i = 0; i < navItems.length; i++) {
   currentA.href = `${navItems[i].link}`;
   currentA.innerText = `${navItems[i].name}`;
 
-  if (window.location.pathname === "/lachocolaterie.html" && i === 0) {
+  if (
+    window.location.pathname ===
+      "/2022-09-JS-RemoteFR-LesCrewStillants-P1-Chocolaterie/lachocolaterie.html" &&
+    i === 0
+  ) {
     for (let j = 0; j < subNavChocolaterie.length; j++) {
       ul.appendChild(document.createElement("li")).classList.add(
         "li-sub" + (j + 1)
@@ -84,7 +88,10 @@ const hideMenu = () => {
   main.style.filter = "none";
   footer.style.filter = "none";
 
-  if (window.location.pathname === "/") {
+  if (
+    window.location.pathname ===
+    "/2022-09-JS-RemoteFR-LesCrewStillants-P1-Chocolaterie/"
+  ) {
     subHeader.style.filter = "none";
   }
 };
@@ -119,7 +126,6 @@ window.addEventListener("scroll", () => {
     header.style.top = "-1px";
   }
   prevScrollpos = currentScrollPos;
-  console.log(window.scrollY);
 });
 
 // Event for closing menu if resize of page
