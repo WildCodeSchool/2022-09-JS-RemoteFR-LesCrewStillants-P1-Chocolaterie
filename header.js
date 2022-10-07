@@ -126,7 +126,6 @@ window.addEventListener("scroll", () => {
     header.style.top = "-1px";
   }
   prevScrollpos = currentScrollPos;
-  console.log(window.scrollY);
 });
 
 // Event for closing menu if resize of page
