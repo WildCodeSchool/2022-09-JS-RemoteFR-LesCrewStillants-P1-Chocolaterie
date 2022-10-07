@@ -8,6 +8,10 @@ footer,
   transition: filter 0.5s ease-in-out;
 }
 
+main {
+  margin-top: 5.4rem;
+}
+
 header {
   font-family: "Poppins";
   padding: 0;
@@ -87,6 +91,9 @@ header nav ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  main {
+    margin-top: 0;
+  }
   header {
     display: flex;
     position: static;
