@@ -1,0 +1,204 @@
+@import "./styles.css";
+@import "./timeline.css";
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--bgColor);
+  font-family: "Poppins";
+}
+
+main h3 {
+  font-size: var(--hTwoSize);
+  color: var(--textColor);
+  margin-top: var(--spacingTwo);
+  margin-left: var(--spacing);
+}
+
+p {
+  font-size: var(--textSize);
+  margin-left: var(--spacing);
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacingTwo);
+  color: var(--textColor);
+}
+
+.boite1,
+.boite2,
+.boite3 {
+  text-align: center;
+  color: var(--titleColor);
+  background: var(--blockColorPrimaryTransparency);
+  padding: 15px;
+  border-bottom: 1px solid var(--blockColorSecondary);
+}
+
+main h2 {
+  text-align: center;
+  color: var(--titleColor);
+}
+
+.chocolaterie {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgColor);
+}
+
+#crewGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.fournisseurs {
+  display: flex;
+  flex-direction: column;
+}
+
+.crewBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: -2px 5px 10px var(--blockColorSecondary);
+  overflow: hidden;
+  background-color: #aaa;
+}
+
+.crewBox img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.crewTitle {
+  position: absolute;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: var(--blockColorPrimaryTransparency);
+  text-align: center;
+  color: var(--titleColorTransparency);
+  font-size: 15px;
+}
+
+#plantionText {
+  margin: 1rem;
+}
+
+#farmText {
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+.fournisseurs h3 {
+  padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 3rem;
+  }
+
+  p {
+    margin-right: var(--spacingFour);
+    margin-bottom: var(--spacingThree);
+  }
+
+  .container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-areas: "timeline crew" "timeline suppliers" "timeline empty";
+    gap: 3rem;
+  }
+
+  .chocolaterie {
+    grid-area: timeline;
+  }
+
+  .equipe {
+    grid-area: crew;
+  }
+
+  #crewGrid {
+    padding: 1rem 0;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .fournisseurs {
+    grid-area: suppliers;
+    display: block;
+  }
+
+  .fournisseurs img {
+    width: 95%;
+    height: 370px;
+    border-radius: 15px;
+    box-shadow: -2px 5px 10px var(--blockColorSecondary);
+    margin: auto;
+  }
+
+  .chocolaterie,
+  .equipe,
+  .fournisseurs {
+    border: 1px solid var(--blockColorSecondary);
+    box-shadow: -2px 5px 10px var(--blockColorSecondary);
+    border-radius: 15px;
+  }
+
+  .boite1,
+  .boite2,
+  .boite3 {
+    border-radius: 14px 14px 0 0;
+  }
+
+  .crewBox {
+    height: 300px;
+    width: 300px;
+  }
+
+  .fournisseurs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    padding-right: 1rem;
+    grid-template-areas: "mainTitle mainTitle" "titre1 titre2" "img1 img2" "p1 p2";
+  }
+
+  #plantationTitle {
+    grid-area: titre1;
+  }
+
+  .boite3 {
+    grid-area: mainTitle;
+  }
+
+  #farmTitle {
+    grid-area: titre2;
+  }
+
+  #plantationImg {
+    grid-area: img1;
+  }
+
+  #farmImg {
+    grid-area: img2;
+  }
+
+  #plantationText {
+    grid-area: p1;
+  }
+
+  #farmText {
+    grid-area: p2;
+  }
+}
